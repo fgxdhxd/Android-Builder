@@ -8,7 +8,7 @@
       "defconfig": "crux_defconfig"
     },
     "enableCcache": true,
-    "enableKernelSU": true,
+    "enableKernelSU": false,
     "enableKernelSUExtPatch": false,
     "enableLXC": false,
     "toolchains": [
