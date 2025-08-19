@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "MIUI",
+      "name": "Hyper",
       "repo": "https://github.com/wjy1065676928/android_kernel_xiaomi_sm8150_56.git",
       "branch": "crux",
       "device": "crux",
