@@ -1,0 +1,27 @@
+name: Kernel Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出代码
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      # 创建缺失目录
+      - name: Create zstd directories
+        run: |
+          mkdir -p lib/zstd/common lib/zstd/compress lib/zstd/decompress
+
+      # 清理 ccache 和旧构建
+      - name: Clean ccache & build
+        run: |
+          ccache -C   # 清一次 ccache，避免坏状态
+          make clean || true
