@@ -454,3 +454,6 @@ jobs:
           files: "${{ env.ANYKERNEL3_FILE }}.zip"
           body: "[Kernelname]:仅带ksu [Kernelname]-both:带ksu+LXC docker"
           generate_release_notes: false
+
+      - name: Show ccache stats
+        run: ccache -s
