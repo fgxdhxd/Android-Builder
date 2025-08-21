@@ -253,5 +253,5 @@ jobs:
           export KBUILD_BUILD_HOST=Github-Action
           export KBUILD_BUILD_USER=$(echo ${{ github.actor }} | tr A-Z a-z)
           ccache -C   # 只跑一次，后面可以删掉
-          make clean
+          make mrproper
           # tree ${{ env.OUT_DIR }}
