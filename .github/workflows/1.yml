@@ -1,6 +1,9 @@
-name: Build kernels
+name: Auto Build
 
 on:
+  push:                # 只需加这一段即可让每次 push 都触发工作流
+    branches:
+      - '**'           # 匹配所有分支（如只想 main 分支可写 - main）
   workflow_dispatch:
   schedule:
     - cron: "0 11 * * 0"
