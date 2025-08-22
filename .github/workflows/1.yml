@@ -318,11 +318,13 @@ jobs:
             git am -s < ${{ env.WORKSPACE }}/LXC/Patches/xt_qtaguid.patch
             echo "🎖️ Apply xt_qtaguid.patch"
           fi
-      - name: Ensure zstd directories exist        
-        working-directory: ${{ env.KERNEL_NAME }}        
-        run: |          
-          ls -R -l lib/zstd
-          mkdir -p lib/zstd/common
+      - name: 清理输出与缓存
+        run: |
+          # 清理 out 目录（out-of-tree build 目录）
+          rm -rf ${{ env.OUT_DIR }}
+          # 清理 ccache（可选，彻底清缓存）
+          ccache -C || true
+          
       - name: 👍 Start building the kernel
         working-directory: ${{ env.KERNEL_NAME }}
         env:
