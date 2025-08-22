@@ -324,6 +324,7 @@ jobs:
           rm -rf ${{ env.OUT_DIR }}
           # 清理 ccache（可选，彻底清缓存）
           ccache -C || true
+          make mrproper
           
       - name: 👍 Start building the kernel
         working-directory: ${{ env.KERNEL_NAME }}
