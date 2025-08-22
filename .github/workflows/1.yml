@@ -318,10 +318,7 @@ jobs:
             git am -s < ${{ env.WORKSPACE }}/LXC/Patches/xt_qtaguid.patch
             echo "🎖️ Apply xt_qtaguid.patch"
           fi
-
-      - name: Prepare zstd dirs
-         run: mkdir -p lib/zstd/common
-
+  
       - name: Clean
          run: make clean && make mrproper
 
