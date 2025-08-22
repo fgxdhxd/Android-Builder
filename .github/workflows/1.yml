@@ -318,10 +318,11 @@ jobs:
             git am -s < ${{ env.WORKSPACE }}/LXC/Patches/xt_qtaguid.patch
             echo "🎖️ Apply xt_qtaguid.patch"
           fi
-  
-      - name: Clean
-         run: make clean && make mrproper
-
+      - name: Ensure zstd directories exist        
+        working-directory: ${{ env.KERNEL_NAME }}        
+        run: |          
+          ls lib/zstd
+          mkdir -p lib/zstd/common
       - name: 👍 Start building the kernel
         working-directory: ${{ env.KERNEL_NAME }}
         env:
