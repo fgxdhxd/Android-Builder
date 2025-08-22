@@ -321,7 +321,7 @@ jobs:
       - name: Ensure zstd directories exist        
         working-directory: ${{ env.KERNEL_NAME }}        
         run: |          
-          ls lib/zstd
+          ls -R -l lib/zstd
           mkdir -p lib/zstd/common
       - name: 👍 Start building the kernel
         working-directory: ${{ env.KERNEL_NAME }}
