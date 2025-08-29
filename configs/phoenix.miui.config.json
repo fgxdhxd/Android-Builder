@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Hyper",
-      "repo": "https://github.com/wjy1065676928/android_kernel_xiaomi_sm8150_56.git",
+      "repo": "https://github.com/fgxdhxd/crux-marisa",
       "branch": "crux",
       "device": "crux",
       "defconfig": "crux_defconfig"
