@@ -2,12 +2,12 @@
   {
     "kernelSource": {
       "name": "Hyper",
-      "repo": "https://github.com/fgxdhxd/crux-marisa",
-      "branch": "Local",
+      "repo": "https://github.com/DawnT112/crux-marisa",
+      "branch": "marisa",
       "device": "crux",
       "defconfig": "crux_defconfig"
     },
-    "enableCcache": true,
+    "enableCcache": false,
     "enableKernelSU": false,
     "enableKernelSUExtPatch": false,
     "enableLXC": false,
