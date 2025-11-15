@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Hyper",
-      "repo": "https://github.com/fgxdhxd/crux-marisa",
-      "branch": "123",
+      "repo": "https://github.com/DawnT112/crux-marisa",
+      "branch": "charge2",
       "device": "crux",
       "defconfig": "crux_defconfig"
     },
