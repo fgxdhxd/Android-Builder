@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Hyper",
       "repo": "https://github.com/fgxdhxd/crux-marisa",
-      "branch": "main",
+      "branch": "123",
       "device": "crux",
       "defconfig": "crux_defconfig"
     },
