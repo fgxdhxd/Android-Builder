@@ -16,26 +16,26 @@
       "repo": "https://github.com/kdrag0n/proton-clang",
       "branch": "master",
       "name": "tools",
-      "binaryEnv": ["toolchains/proton-clang/bin"]
+      "binaryEnv": ["bin"]
     }
   ],
   "params": {
     "ARCH": "arm64",
-    "CC": "tools/toolchains/proton-clang/bin/clang",
+    "CC": "tools/bin/clang",
     "externalCommands": {
-      "CROSS_COMPILE": "tools/toolchains/proton-clang/aarch64-linux-gnu/bin/aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "tools/toolchains/proton-clang/arm-linux-gnueabi/bin/arm-linux-gnueabi-",
+      "CROSS_COMPILE": "tools/aarch64-linux-gnu/bin/aarch64-linux-gnu-",
+      "CROSS_COMPILE_ARM32": "tools/arm-linux-gnueabi/bin/arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "",
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
-      "AR": "tools/toolchains/proton-clang/bin/llvm-ar",
+      "AR": "tools/bin/llvm-ar",
       "HOSTCC": "gcc",
-      "HOSTCXX": "tools/toolchains/proton-clang/bin/clang++",
-      "NM": "tools/toolchains/proton-clang/bin/llvm-nm",
-      "OBJCOPY": "tools/toolchains/proton-clang/bin/llvm-objcopy",
-      "OBJDUMP": "tools/toolchains/proton-clang/bin/llvm-objdump",
-      "STRIP": "tools/toolchains/proton-clang/bin/llvm-strip",
-      "LD": "tools/toolchains/proton-clang/bin/ld.lld",
-      "DTC_EXT": "tools/toolchains/proton-clang/bin/dtc"
+      "HOSTCXX": "tools/bin/clang++",
+      "NM": "tools/bin/llvm-nm",
+      "OBJCOPY": "tools/bin/llvm-objcopy",
+      "OBJDUMP": "tools/bin/llvm-objdump",
+      "STRIP": "tools/bin/llvm-strip",
+      "LD": "tools/bin/ld.lld",
+      "DTC_EXT": "tools/bin/dtc"
       }
     },
     "AnyKernel3": {
