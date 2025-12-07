@@ -11,31 +11,31 @@
     "enableKernelSU": false,
     "enableKernelSUExtPatch": false,
     "enableLXC": false,
-    "toolchains": [
-      {
-        "repo": "https://github.com/luyanci/kernel_bulid",
-        "branch": "main",
-        "name": "tools",
-        "binaryEnv": ["toolclang/clang-r428724/bin","toolgcc/bin"]
-      }
-    ],
-    "params": {
-      "ARCH": "arm64",
-      "CC": "tools/toolclang/clang-r428724/bin/clang",
-      "externalCommands": {
-        "CROSS_COMPILE": "tools/toolgcc/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "tools/toolgcc/arm/bin/arm-linux-androideabi-",
-        "CROSS_COMPILE_COMPAT":"",
-        "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "AR": "tools/toolclang/clang-r428724/bin/llvm-ar",
-        "HOSTCC":"gcc",
-        "HOSTCXX":"tools/toolclang/clang-r428724/bin/clang++",
-        "NM":"tools/toolclang/clang-r428724/bin/llvm-nm" ,
-        "OBJCOPY":"tools/toolclang/clang-r428724/bin/llvm-objcopy",
-        "OBJDUMP":"tools/toolclang/clang-r428724/bin/llvm-objdump",
-        "STRIP":"tools/toolclang/clang-r428724/bin/llvm-strip",
-        "LD":"tools/toolclang/clang-r428724/bin/ld.lld",
-        "DTC_EXT":"tools/dtc"
+  "toolchains": [
+    {
+      "repo": "https://github.com/kdrag0n/proton-clang",
+      "branch": "master",
+      "name": "tools",
+      "binaryEnv": ["toolchains/proton-clang/bin"]
+    }
+  ],
+  "params": {
+    "ARCH": "arm64",
+    "CC": "tools/toolchains/proton-clang/bin/clang",
+    "externalCommands": {
+      "CROSS_COMPILE": "tools/toolchains/proton-clang/aarch64-linux-gnu/bin/aarch64-linux-gnu-",
+      "CROSS_COMPILE_ARM32": "tools/toolchains/proton-clang/arm-linux-gnueabi/bin/arm-linux-gnueabi-",
+      "CROSS_COMPILE_COMPAT": "",
+      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "AR": "tools/toolchains/proton-clang/bin/llvm-ar",
+      "HOSTCC": "gcc",
+      "HOSTCXX": "tools/toolchains/proton-clang/bin/clang++",
+      "NM": "tools/toolchains/proton-clang/bin/llvm-nm",
+      "OBJCOPY": "tools/toolchains/proton-clang/bin/llvm-objcopy",
+      "OBJDUMP": "tools/toolchains/proton-clang/bin/llvm-objdump",
+      "STRIP": "tools/toolchains/proton-clang/bin/llvm-strip",
+      "LD": "tools/toolchains/proton-clang/bin/ld.lld",
+      "DTC_EXT": "tools/toolchains/proton-clang/bin/dtc"
       }
     },
     "AnyKernel3": {
