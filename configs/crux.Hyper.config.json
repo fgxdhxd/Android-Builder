@@ -23,8 +23,8 @@
     "ARCH": "arm64",
     "CC": "tools/bin/clang",
     "externalCommands": {
-      "CROSS_COMPILE": "tools/aarch64-linux-gnu/bin/aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "tools/arm-linux-gnueabi/bin/arm-linux-gnueabi-",
+      "CROSS_COMPILE": "aarch64-linux-gnu-",
+      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "",
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "AR": "tools/bin/llvm-ar",
